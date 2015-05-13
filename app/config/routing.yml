@@ -1,4 +1,4 @@
 rottenwood_booking:
     resource: "@RottenwoodBookingBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /rest
