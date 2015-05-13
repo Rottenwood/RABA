@@ -8,6 +8,20 @@ class ActionCollection
     private $actions = [];
 
     /**
+     * @param ActionInterface[] $actions
+     */
+    public function __construct(array $actions)
+    {
+        foreach ($actions as $action) {
+            if (!$action instanceof ActionInterface) {
+            	throw new \InvalidArgumentException('Every element in array must implement ActionInterface');
+            }
+        }
+
+        $this->actions = $actions;
+    }
+
+    /**
      * @return ActionInterface[]
      */
     public function getActions()
