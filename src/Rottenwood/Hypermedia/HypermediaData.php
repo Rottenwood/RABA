@@ -2,7 +2,7 @@
 
 namespace Rottenwood\Hypermedia;
 
-class HypermediaResponse
+class HypermediaData
 {
     /** @var ActionInterface */
     private $actions;
