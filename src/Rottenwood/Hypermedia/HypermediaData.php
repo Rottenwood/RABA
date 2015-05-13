@@ -4,17 +4,16 @@ namespace Rottenwood\Hypermedia;
 
 class HypermediaData
 {
-    /** @var ActionInterface */
+    /** @var ActionCollection */
     private $actions;
     /** @var DataInterface */
     private $data;
 
     /**
-     * HypermediaResponse constructor.
-     * @param ActionInterface $actions
+     * @param ActionCollection $actions
      * @param DataInterface $data
      */
-    public function __construct(ActionInterface $actions, DataInterface $data)
+    public function __construct(ActionCollection $actions, DataInterface $data)
     {
         $this->actions = $actions;
         $this->data = $data;
