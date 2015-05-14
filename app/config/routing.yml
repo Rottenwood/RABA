@@ -1,4 +1,9 @@
+rottenwood_booking_pages:
+    resource: "@RottenwoodBookingBundle/Controller/DefaultController.php"
+    type:     annotation
+    prefix:   /
+
 rottenwood_booking:
-    resource: "@RottenwoodBookingBundle/Controller/"
+    resource: "@RottenwoodBookingBundle/Controller/RestController.php"
     type:     annotation
     prefix:   /rest

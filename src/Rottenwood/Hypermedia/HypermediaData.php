@@ -18,4 +18,12 @@ class HypermediaData
         $this->actions = $actions;
         $this->data = $data;
     }
+
+    public function getJson()
+    {
+        return json_encode(array_merge([
+            'actions' => $this->actions,
+        ], (array) $this->data));
+    }
+
 }
